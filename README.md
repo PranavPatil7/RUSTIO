@@ -49,20 +49,3 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
 `tokio-uring` requires a very recent linux kernel. (Not even all kernels with io_uring support will work)
 In particular `5.4.0` does not work (This is standard on Ubuntu 20.4). However `5.11.0` (the ubuntu hwe image) does work.
  
-## Project status
-
-The `tokio-uring` project is still very young. Currently, we are focusing on
-supporting filesystem and network operations. Eventually, we will add safe APIs for all
-io-uring compatible operations.
-
-## License
-
-This project is licensed under the [MIT license].
-
-[MIT license]: LICENSE
-
-### Contribution
-
-Unless you explicitly state otherwise, any contribution intentionally submitted
-for inclusion in tokio-uring by you, shall be licensed as MIT, without any
-additional terms or conditions.
